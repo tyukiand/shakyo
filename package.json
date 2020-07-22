@@ -1,0 +1,32 @@
+{
+  "name": "shakyo",
+  "version": "0.1.0",
+  "description": "primitive command line tool for shakyo",
+  "main": "main.js",
+  "author": "tyukiand",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@types/node": "14.0.22",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "start": "node dist/main.js",
+    "hello": "scripts/hello.sh",
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "<rootDir>/src/test/**/*.test.ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
+  }
+}
